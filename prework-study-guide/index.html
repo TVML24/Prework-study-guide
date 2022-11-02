@@ -12,7 +12,146 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+        <h3>Glossary</h3>
+        <ul>
+          <li>The head element contains information about the webpage.</li>
+          <li>The body element represents the visible content shown to the user.</li>
+          <li>One element may have many attributes</li>
+          <li>A child element is an element nestled inside another element</li>
+          <li>A semantic element describes it's own content and the role it plays on the webpage.</li>
+          <li>An unordered list is bulletpoints/an ordered list is numbered (?)</li>
+        </ul>
+        <h3>Elements - Head</h3>
+        <ul>
+          <li>&lt;Head&gt;- contains metadata (not visible when page is rendered).</li>
+          <li>&lt;!DOCTYPE&gt; (format e.g. html)- statement that indicates to the browser how to render the document.</li>
+          <li>&lt;html lang= "en"&gt; starts our html coding and indicates that it is in the english language.</li>
+          <li>&lt;title&gt; defines the title of the webpage, important for SEOs.</li>
+          <li>&lt;style&gt; defines the CSS styles associated with the webpage.</li>
+          <li>&lt;base&gt; defines the base URL associated with the webpage.</li>
+          <li>&lt;link&gt; connects an external resource to the html document.</li>
+          <li>&lt;meta&gt; defines other meta data, such as; character set, description, keywords, author and viewpoint.</li>
+          <li></li>
+        </ul>
+        <h3> Attributes - Head</h3>
+        <ul>
+          <li>(inside meta element) charset= "UTF-8" (designates character set used by the page)</li>
+          <li>(inside meta element) http-equiv= "X-UA-Compatible" Content= "IE=edge" (instructs browser of what version of IE page should be rendered as (in this example Edge)).</li>
+          <li>(inside meta element) name="viewport" content="width=device-width, initial-scale=1.0" (designates the viewport, which allows you to control the width and scaling of the viewport, so that it is correctly sized for all devices).</li>
+        </ul>
+        <h3>Elements - Body</h3>
+        <ul>
+        <li>&lt;h1&gt;(through to h6) Makes a heading and represents a level of that heading. e.g. h1 appears at the top of the page and should only appear once, headings need to appear in numberical order.</li>
+        <li>&lt;p&gt; represents paragraph or block of text.</li>
+        <li>&lt;ul&gt; begins an unordered list e.g. bullet points.</li>
+        <li>&lt;ol&gt; begins an ordered list e.g. numerical.</li>
+        <li>&lt;li&gt; begins an item in the list.</li>
+        <li>&lt;img&gt; contains elements and attributes relating to a single image.</li>
+        <li>&lt;br&gt; indicate a line break or empty space.</li>
+        <li>&lt;a&gt; element stands for 'anchor, and represents a link to another page (or the same page)</li>
+        <li>&lt;section&gt; a semantic element that defines a thematic section of content, but does not render.</li>
+        </ul>
+        <h3>Attributes - Body</h3>
+        <ul>
+        <li>(inside img element) src= "www.imagehost.com/example" (tells the webpage where to find the image)</li>
+        <li>(inside img element) alt= "example image" (provides text description of image)</li>
+        <li>(inside img element) width= "(width of image in pixels)" (allows you to set the width of the image)</li>
+        <li>(inside img element) height= "(height of image in pixels)" (allows you to set the height of the image)</li>
+        <li>(inside a element) href= "(www.examplelink.com)"&gt;This is an example link! (href points to the url of the link you want to add, followed by the text you want the hyperlink to have).</li>
+        <li>(inside section element) class= "(class name)" id= "(section name)" (here class name relates to the style of the section (CSS?) and id marks the element for Javascript)</li>
+        </ul>
+        <h3>Resources</h3>
+        <ul>
+        <li><a href= "https://www.w3schools.com/html/html_entities.asp">List of HTML entities for reserved characters.</a></li>
+        </ul>
+      </section>
+   
+      <section class="card" id="css-section">
+   
+      </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git Bash/Git Hub</h2>
+        <h3>Glossary</h3>
+        <ul>
+        <li>SHA - key to access a version or previous version of code/webpage</li>
+        <li>Repository/Repo - A project on github containing all files related to project including other branches.</li>
+        <li>Markdown (.md) - a textfile written in Markdown syntax that contains notes in plain text about the content of a website/code. </li>
+        <li>Issue - Accessed from Git Hub website; way to set tasks, report progress. Open to start and close when done. </li>
+        <li>Staging area - where any changes you have made wait for the next commit. </li>
+        <li>(to) commit - to make a change with a name that tells everyone what the change was. Tip- write commits in the imperative case.</li>
+        <li>push - send a commits to the cloud to await a pull request.</li>
+        <li>pull request- request to merge work done on a separate branch back into the main branch.</li>
+        <li>SSH agent - holds your decrypted keys in memory, so that you can use them.</li>
+        <li>SSH key - An SSH key is an access credential for the secure shell (SSH) network protocol. Generating SSH keys allows developers to interface with certain remote services without having to constantly retype login information.</li>
+        </ul>
+        <h3>Git hub/CLI commands</h3>
+        <ul>
+        <li>pwd - (print working directory) Displays current location in CLI.</li>
+        <li>ls - list of files and folders in current location.</li>
+        <li>cd downloads - (change directory) - in the example it will take us to the downloads folder.</li>
+        <li>mkdir new_folder - make a new directory in current location - in the example it will be called new_folder.</li>
+        <li>touch new_readme.txt - create a new .txt file in the current location - in the example called new_readme.</li>
+        <li>start new_readme.txt - open a .txt file in the current location - in the example called new_readme.txt.</li>
+        <li>eval "$(ssh -agent -s)" - to run SSH agent.</li>
+        <li>git revert S767617 - to revert to a previous SHA - in the example the gibberish is the first 7 characters of the SHA key.</li>
+        <li>git clone XXXX - to clone a repo directory to the current location</li>
+        <li>git remote -v - to connect to remote repo.</li>
+        <li>code . - to open VSC from current directory.</li>
+        <li>git status - view status of branch/commits.</li>
+        <li>git checkout -b feature/startercode - to create a new branch (e.g. checkout a book from the library) - in the example the new branch will be called feature/startercode</li>
+        <li>git add -A - to add all files in the directory to the staging area.</li>
+        <li>git pull origin main - pull files from another branch (to make sure you are using the latest version of the code) - here the branch is called main.</li>
+        <li>git push origin main - push files to another branch (these will wait for pull request) - here the branch is main.</li>
+        <li>git commit -m "bugfix" - to commit all changes in the staging area and leave a message about what has been changed - here the message is bugfix.</li>
+        </ul>
+        <h3>Git Hub Workflows</h3>
+        <h4>SSH key setup</h4>
+        <ol type="1">
+        <li>Use ls -al ~/.ssh to check if any existing SSH keys are present </li>
+        <li>If you see a public key ending in .pub e.g. id_rsa.pub, id_ecdsa.pub, id_ed25519.pub - you can skip generating a new SSH key and use your existing keys to add to the SSH agent. </li>
+        <li>If you see an error that it doesn't exist, you need to create a new SSH pair </li>
+        <li>use ssh-keygen -t ed25519 -C "your.email@gmail.com" to create a new SSH key</li>
+        <li>When you are prompted save the key in your default file location and create a secure passphrase </li>
+        <li>use eval “$(ssh-agent -s)” to start the SSH agent </li>
+        <li>Add your private SSH key to the ssh-agent using the ssh-add command</li>
+        <li>Copy the public SSH key to your clipboard. Be sure not to copy anything else after this point so that your SSH key stays on your clipboard! </li>
+        <li>Navigate to the GitHub website and log in to your account. </li>
+        <li>Click on Settings, and then click on SSH and GPG keys. </li>
+        <li>Add your SSH key. </li>
+        <li>You may need to add your name using git config --global user.name "yourname" </li>
+        <li>You may need to add your email using git config --global user.email "YOUR_EMAIL" </li>
+        <li>In your terminal, enter ssh -T git@github.com. Verify that the fingerprint in the message matches the GitHub’s RSA public key fingerprint. If it does, type yes and you should be connected!</li>
+        </ol>
+        </h4>
+        <h4>Basic Github Workflow</h4>
+        <ol type="1">
+        <li>Find the directory in CLI</li>
+        <li>Use Code . to open in VCS</li>
+        <li>Use git status in CLI to check branch info</li>
+        <li>Use git checkout -b (branch name) to create new feature branch to work on</li>
+        <li>Confirm move to new branch with git status</li>
+        <li>Make your changes or add code/files to directory</li>
+        <li>Use git add -A to add all modifications from the current working branch to the staging area</li>
+        <li>Use git commit -m "..." to make the commits from the staging area and describe them</li>
+        <li>Use git pull origin main to confirm our branch is still using the latest version of main</li>
+        <li>Use git push origin main to push the changes to the remote branch in the cloud.</li>
+        <li>Visit Repo in browser and complete pull request</li>
+        </ol>
+        <h4>To add files/code to project</h4>
+        <ol type="1">
+        <li>Unzip files to project folder</li>
+        <li>Navigate to project folder in CLI</li>
+        <li>Use code . to open VSC. New files will automatically show. They are now in the staging area ready to be committed and pushed.</li>
+        </ol>
+      
+      </section>
+   
+      <section class="card" id="javascript-section">
+   
+      </section>
     </main>
 
     <footer>
