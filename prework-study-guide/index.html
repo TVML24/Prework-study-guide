@@ -196,6 +196,57 @@
       </section>
    
       <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+          <h3>Glossary</h3>
+            <ul>
+              <li>Script - the element in the html document that loads the JavaScript .script file. Must be placed as far down the html coding as possibly; preferably directly before the end of body. e.g. &lt;script src="file destintion/example/main.js&gt; &lt;script&gt; </li>
+              <li>Array - an ordered collection of data that allows multiple values in a single variable. e.g. Var Tim = ["27", "Australian"];. We can then select a value from the array with Tim[0]. Remember that arrayed values are zero-indexed!</li>
+              <li>Object - any kind of JavaScript variable.</li>
+              <li>Operator - a symbol that produces based on two values or variables. e.g. +, -, x, /. Be careful + as it can add mathematically or combine 2 strings (1+1=11).</li>
+              <li>Assignment - a symbol that assigns a variable. e.g. =.</li>
+              <li>Strict Equality - a symbol that tests two values for equality and returns a boolean result (true/false). This symbol is ===.</li>
+              <li>Not - returns the opposite of the value that would otherwise be returned. e.g. myVariable = 3, buuut !(myVariable === 3). The result is false as ! performs the not operation.</li>
+              <li>Does not Equal - tests to see if two values are not equal and returns a boolean result. Opposite of strict equality. e.g. !==.</li>
+              <li>Conditional - a code structure that tests if an expression is true or truthy and executes code based on the result. See examples section.</li>
+              <li>Function - creates a re-usable function that can be used anywhere in the code. See examples section.</li>
+              <li>Event/event handler - listens for activity in the broswer and runs code in response to that activity. e.g. clicking the screen.</li>
+              <li>Dynamic typing - vairables in Javascript may be associated with any value type, or reassigned to a different value type e.g. let pineapple = 117;</li>
+              <li>Weak typing - Javascript allows for implicit type conversion when an operation involves mismatched value types rather than throwing an error. e.g. foo = 42, foo + 1, return 421 (this is the combination of the two strings).</li>
+              <li>Primitive value/immutable - primitive values are values that cannot be changed e.g. null. e.g. changing this value would break JS.</li>
+              <li>Null - expresses that a variable points to no object. See examples for intentional usage of null.</li>
+              <li>Undefined - expresses the a variable points to no value.</li>
+              <li>JavaScript Property - These associate keys with their value. Here keys define the data set and values are the variables that belong to the set. e.g. (Key) FirstName (value) Bugs</li>
+              <li>Data Property - A kind of JavaScript property that associates a certain key with a certain kind of value. e.g. value (can be any kind of value), writable (boolean as to whether the property can be assigned (=)), enumerable (boolean value that indicates whether a property can be used in a for...loop), configurable (a boolean value that indicates whether or not a value can be deleted, modified or be changed to an accessor property). </li>
+              <li>Accessor Property - a key with one of two accessor functions (get and set) to retrieve or store a value.</li>
+              <li>Get - binds an object property to a function that will be called when it is looked up. See example section.</li>
+              <li>Set - can be used to define or store a value.</li>
+              <li>Method - A Javascript method is a property containing a function definition. </li>
+              <li>Argument - Object called arguments work as a local variable available to all function except arrows. This is used to access the parameter that is passed to the function. It can only be accessed inside the function.</li>
+              <li>Truthy/Falsy - A value is considered falsy if it is 0, +-0, On, Null, Undefined, NaN, or a boolean false value. All other values including a boolean true are truthy. Conditional (If statements) trigger conditions only if the value is truthy. See examples.</li>
+              <li>For loop - Uses a predictable pattern of indicies to perform a task on all the items in the array by allowing a single code block to run over and over again. See examples section.</li>
+            </ul>
+          <h3>Built-in Functions</h3>
+            <ul>
+              <li>document.querySelector ("h1"); - selects an element from html. See example section.</li>
+              <li>ExampleVariable.textContent - sets the variables of the text content (e.g.) what is the text. See example section. </li>
+              <li>alert(); - triggers pop-up in browser. </li>
+              <li>return result; instructs the function to return the result of the variable so that it is available to use outside of the variable. </li>
+              <li>document.querySelector("html").addEventListener("click", - instructs the event listener to listen for a click anywhere on the html page. </li>
+              <li>console.log () - outputs the contents of the parentheses to the console. </li>
+              <li>math.floor() - Always rounds down and returns the largest integer less than or equal to a given number.</li>
+              <li>math.random() - returns a pseudo random number that is greater than or equal to zero and less than one.</li>
+              <li></li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+              <li>Conditional Statement</li>
+              <li>Function</li>
+              <li>Usage of Null</li>
+              <li>Usage of Get</li>
+              <li>Usage of Set</li>
+              <li>For... Loop</li>
+              <li>Usage of querySelector</li>
+            </ul>
    
       </section>
 
@@ -205,6 +256,7 @@
             <ul>
               <li>Separation of concerns - Making the program modular, so that each section is separate and addresses a different "concern". This makes code easier to maintain and develop further, but requires more initial coding to set up.</li>
               <li>D.R.Y code - Don't Repeat Yourself. e.g. rather than make separate lines for header and footer in a CSS stylesheet use a comma to combine the two. e.g. use selector header, footer</li>
+              <li>Control Flow - The order in which the computer executes code e.g. in JS it is linear (top to bottom).</li>
             </ul>
           <h3>Resources</h3>
             <ul>
