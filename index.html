@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".\assets\style.css">
+    <title>Prework Study Guide</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Prework Study Guide</h1>
+      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+    </header>
+    <main>
+      <section class="card" id="html-section">
+        <h2>HTML</h2>
+          <h3>Glossary</h3>
+            <ul>
+              <li>The head element contains information about the webpage.</li>
+              <li>The body element represents the visible content shown to the user.</li>
+              <li>One element may have many attributes</li>
+              <li>A child element is an element nestled inside another element</li>
+              <li>A semantic element describes it's own content and the role it plays on the webpage.</li>
+              <li>An unordered list is bulletpoints/an ordered list is numbered (?)</li>
+            </ul>
+          <h3>Elements - Head</h3>
+            <ul>
+              <li>&lt;Head&gt;- contains metadata (not visible when page is rendered).</li>
+              <li>&lt;!DOCTYPE&gt; (format e.g. html)- statement that indicates to the browser how to render the document.</li>
+              <li>&lt;html lang= "en"&gt; starts our html coding and indicates that it is in the english language.</li>
+              <li>&lt;title&gt; defines the title of the webpage, important for SEOs.</li>
+              <li>&lt;style&gt; defines the CSS styles associated with the webpage.</li>
+              <li>&lt;base&gt; defines the base URL associated with the webpage.</li>
+              <li>&lt;link&gt; connects an external resource to the html document.</li>
+              <li>&lt;meta&gt; defines other meta data, such as; character set, description, keywords, author and viewpoint.</li>
+            </ul>
+          <h3> Attributes - Head</h3>
+            <ul>
+              <li>(inside meta element) charset= "UTF-8" (designates character set used by the page)</li>
+              <li>(inside meta element) http-equiv= "X-UA-Compatible" Content= "IE=edge" (instructs browser of what version of IE page should be rendered as (in this example Edge)).</li>
+              <li>(inside meta element) name="viewport" content="width=device-width, initial-scale=1.0" (designates the viewport, which allows you to control the width and scaling of the viewport, so that it is correctly sized for all devices).</li>
+            </ul>
+          <h3>Elements - Body</h3>
+            <ul>
+              <li>&lt;h1&gt;(through to h6) Makes a heading and represents a level of that heading. e.g. h1 appears at the top of the page and should only appear once, headings need to appear in numberical order.</li>
+              <li>&lt;p&gt; represents paragraph or block of text.</li>
+              <li>&lt;ul&gt; begins an unordered list e.g. bullet points.</li>
+              <li>&lt;ol&gt; begins an ordered list e.g. numerical.</li>
+              <li>&lt;li&gt; begins an item in the list.</li>
+              <li>&lt;img&gt; contains elements and attributes relating to a single image.</li>
+              <li>&lt;br&gt; indicate a line break or empty space.</li>
+              <li>&lt;a&gt; element stands for 'anchor, and represents a link to another page (or the same page)</li>
+              <li>&lt;section&gt; a semantic element that defines a thematic section of content, but does not render.</li>
+            </ul>
+          <h3>Attributes - Body</h3>
+            <ul>
+              <li>(inside img element) src= "www.imagehost.com/example" (tells the webpage where to find the image)</li>
+              <li>(inside img element) alt= "example image" (provides text description of image)</li>
+              <li>(inside img element) width= "(width of image in pixels)" (allows you to set the width of the image)</li>
+              <li>(inside img element) height= "(height of image in pixels)" (allows you to set the height of the image)</li>
+              <li>(inside a element) href= "(www.examplelink.com)"&gt;This is an example link! (href points to the url of the link you want to add, followed by the text you want the hyperlink to have).</li>
+              <li>(inside section element) class= "(class name)" id= "(section name)" (here class name relates to the style of the section (CSS?) and id marks the element for Javascript)</li>
+            </ul>
+          <h3>Resources</h3>
+            <ul>
+              <li><a href= "https://www.w3schools.com/html/html_entities.asp">List of HTML entities for reserved characters.</a></li>
+            </ul>
+      </section>
+   
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+          <h3>Glossary</h3>
+            <ul>
+              <li>Inline CSS - to style an element directly into the html file. Inline styles apply to a sepcific html tag, using a style attribute with CSS rule to style a particular page element only. Like in text. e.g. to style a heading &lt;h1 style="color: red;&gt; This will only apply to that instance of h1.</li>
+              <li>Internal Stylesheet - to embed an entire stylesheet directly into the &lt;head&gt; element. This sheet contains rules for the webpage and applies only to this page. You can configure CSS classes and IDs as you would with an external sheet. A single change to the CSS rule will effect all instances of the element. (example to be insterted)</li>
+              <li>External Stylesheet - The most common way to style a website. Preferred because it allows developers to keep all CSS rules in one place which makes design changes easier later on. This require a &lt;link&gt; element inside the &lt;head&gt; element in the html file to the stylesheet. This file must be added to the repo first or the coding will not be reflected.</li>
+              <li>CSS rule - made up of a selector that signifies which element it will apply to (e.g. h1 for all instances of h1), a property (e.g. color:) and a value (e.g. blue;).</li>
+              <li>CSS box model - visual way of representing how modifying different properties will effect the size of the element overall. (example to be included.)</li>
+              <li>(to) designate a class attribute - basically, to make a custom selector for CSS rules.</li>
+              <li>.card - The period preceeding card designates it as a class selector. Any html element assigned to this class will gain the assignment designated to it by the CSS stylesheet. (provide an example)</li>
+            </ul>
+          <h3>CSS Properties</h3>
+            <ul>
+              <li>Margin: 0; - This designates a margin of zero. A margin is the space we want outside of the element.</li>
+              <li>Padding: 0; - This designates a padding of zero. Padding is space left free inside of the element. If you increase padding it will make the whole element bigger.</li>
+              <li>Background-color: blue; - This designates the background colour of the element as blue.</li>
+              <li>colour: blue; - This designates the element should be blue.</li>
+              <li>text-align: center; - This designates that the text alignment should be centered.</li>
+              <li>text-decoration: underline; This designates that the text should be underlined.</li>
+              <li>display: block; - Instructs each image to start on a new line.</li>
+            </ul>
+          <h3>CSS Selectors</h3>
+            <ul>
+              <li>Wild card symbol (*) - declares that all emements on the page will have the following CSS properties.</li>
+            </ul>
+          <h3>CSS Values</h3>
+            <ul>
+              <li>width: 80%; - instructs that the computer should use 80% of the available width.</li>
+              <li>margin: 40px auto; - instructs that the margin should be 40px at the top and bottom and the auto value applied to the left and right.</li>
+              <li>border: 5px solid gray; - instructs that a border should be created with a width of 5px and be solid gray in colour.</li>
+              <li>box-shadow: 5px 10px #888888; - instructs that shadows should be added around the elements frame. In this example 5px is the offset on the x-axis relative to the element, 10px is the offset on the y-axis relative to the element and #888888 is the colour defined by a html hexadecimal code. This affect could also include blur and spread radius, but here they are not defined.</li>
+            </ul>
+          <h3>Resources</h3>
+            <ul>
+              <li><a href= "https://htmlcolorcodes.com/">List of HTML hexadecimal colour codes.</a></li>
+              <li><a href= "https://developer.mozilla.org/en-US/docs/Web/CSS">Extensive CSS resource.</a></li>
+            </ul>
+      </section>
+   
+      <section class="card" id="git-section">
+        <h2>Git Bash/Git Hub/CLI</h2>
+          <h3>Glossary</h3>
+            <ul>
+              <li>SHA - key to access a version or previous version of code/webpage</li>
+              <li>Repository/Repo - A project on github containing all files related to project including other branches.</li>
+              <li>Markdown (.md) - a textfile written in Markdown syntax that contains notes in plain text about the content of a website/code. </li>
+              <li>Issue - Accessed from Git Hub website; way to set tasks, report progress. Open to start and close when done. </li>
+              <li>Staging area - where any changes you have made wait for the next commit. </li>
+              <li>(to) commit - to make a change with a name that tells everyone what the change was. Tip- write commits in the imperative case.</li>
+              <li>push - send a commits to the cloud to await a pull request.</li>
+              <li>pull request- request to merge work done on a separate branch back into the main branch.</li>
+              <li>SSH agent - holds your decrypted keys in memory, so that you can use them.</li>
+              <li>SSH key - An SSH key is an access credential for the secure shell (SSH) network protocol. Generating SSH keys allows developers to interface with certain remote services without having to constantly retype login information.</li>
+            </ul>
+          <h3>Git hub/CLI commands</h3>
+            <ul>
+              <li>pwd - (print working directory) Displays current location in CLI.</li>
+              <li>ls - list of files and folders in current location.</li>
+              <li>cd downloads - (change directory) - in the example it will take us to the downloads folder.</li>
+              <li>mkdir new_folder - make a new directory in current location - in the example it will be called new_folder.</li>
+              <li>touch new_readme.txt - create a new .txt file in the current location - in the example called new_readme.</li>
+              <li>start new_readme.txt - open a .txt file in the current location - in the example called new_readme.txt.</li>
+              <li>eval "$(ssh -agent -s)" - to run SSH agent.</li>
+              <li>git revert S767617 - to revert to a previous SHA - in the example the gibberish is the first 7 characters of the SHA key.</li>
+              <li>git clone XXXX - to clone a repo directory to the current location</li>
+              <li>git remote -v - to connect to remote repo.</li>
+              <li>code . - to open VSC from current directory.</li>
+              <li>git status - view status of branch/commits.</li>
+              <li>git checkout -b feature/startercode - to create a new branch (e.g. checkout a book from the library) - in the example the new branch will be called feature/startercode</li>
+              <li>git add -A - to add all files in the directory to the staging area.</li>
+              <li>git pull origin main - pull files from another branch (to make sure you are using the latest version of the code) - here the branch is called main.</li>
+              <li>git push origin main - push files to another branch (these will wait for pull request) - here the branch is main.</li>
+              <li>git commit -m "bugfix" - to commit all changes in the staging area and leave a message about what has been changed - here the message is bugfix.</li>
+            </ul>
+          <h3>File types/Asset types</h3>
+            <ul>
+              <li>index.html - All of the html coding on a webpage - outiside of asset folder, inside project folder.</li>
+              <li>style.css - An external stylesheet for CSS coding - in assets folder, inside of project folder.</li>
+              <li>readme.ms - Describes basic function of project, not reflected on user side - in parent foplder, outside of project folder.</li>
+            </ul>
+          <h3>Git Hub Workflows</h3>
+            <h4>SSH key setup</h4>
+              <ol type="1">
+                <li>Use ls -al ~/.ssh to check if any existing SSH keys are present </li>
+                <li>If you see a public key ending in .pub e.g. id_rsa.pub, id_ecdsa.pub, id_ed25519.pub - you can skip generating a new SSH key and use your existing keys to add to the SSH agent. </li>
+                <li>If you see an error that it doesn't exist, you need to create a new SSH pair </li>
+                <li>use ssh-keygen -t ed25519 -C "your.email@gmail.com" to create a new SSH key</li>
+                <li>When you are prompted save the key in your default file location and create a secure passphrase </li>
+                <li>use eval “$(ssh-agent -s)” to start the SSH agent </li>
+                <li>Add your private SSH key to the ssh-agent using the ssh-add command</li>
+                <li>Copy the public SSH key to your clipboard. Be sure not to copy anything else after this point so that your SSH key stays on your clipboard! </li>
+                <li>Navigate to the GitHub website and log in to your account. </li>
+                <li>Click on Settings, and then click on SSH and GPG keys. </li>
+                <li>Add your SSH key. </li>
+                <li>You may need to add your name using git config --global user.name "yourname" </li>
+                <li>You may need to add your email using git config --global user.email "YOUR_EMAIL" </li>
+                <li>In your terminal, enter ssh -T git@github.com. Verify that the fingerprint in the message matches the GitHub’s RSA public key fingerprint. If it does, type yes and you should be connected!</li>
+              </ol>
+            <h4>Basic Github Workflow</h4>
+              <ol type="1">
+                <li>Find the directory in CLI</li>
+                <li>Use Code . to open in VCS</li>
+                <li>Use git status in CLI to check branch info</li>
+                <li>Use git checkout -b (branch name) to create new feature branch to work on</li>
+                <li>Confirm move to new branch with git status</li>
+                <li>Make your changes or add code/files to directory</li>
+                <li>Use git add -A to add all modifications from the current working branch to the staging area</li>
+                <li>Use git commit -m "..." to make the commits from the staging area and describe them</li>
+                <li>Use git pull origin main to confirm our branch is still using the latest version of main</li>
+                <li>Use git push origin main to push the changes to the remote branch in the cloud.</li>
+                <li>Visit Repo in browser and complete pull request</li>
+              </ol>
+            <h4>To add files/code to project</h4>
+              <ol type="1">
+                <li>Unzip files to project folder</li>
+                <li>Navigate to project folder in CLI</li>
+                <li>Use code . to open VSC. New files will automatically show. They are now in the staging area ready to be committed and pushed.</li>
+              </ol>
+          <h3>Resources</h3>
+              <ul>
+                <li><a href= "https://education.github.com/git-cheat-sheet-education.pdf">Github Command Cheat Sheet</a></li>
+              </ul>
+      
+      </section>
+   
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+          <h3>Glossary</h3>
+            <ul>
+              <li>Script - the element in the html document that loads the JavaScript .script file. Must be placed as far down the html coding as possibly; preferably directly before the end of body. e.g. &lt;script src="file destintion/example/main.js&gt; &lt;script&gt; </li>
+              <li>Array - an ordered collection of data that allows multiple values in a single variable. e.g. Var Tim = ["27", "Australian"];. We can then select a value from the array with Tim[0]. Remember that arrayed values are zero-indexed!</li>
+              <li>Object - any kind of JavaScript variable.</li>
+              <li>Operator - a symbol that produces based on two values or variables. e.g. +, -, x, /. Be careful + as it can add mathematically or combine 2 strings (1+1=11).</li>
+              <li>Assignment - a symbol that assigns a variable. e.g. =.</li>
+              <li>Strict Equality - a symbol that tests two values for equality and returns a boolean result (true/false). This symbol is ===.</li>
+              <li>Not - returns the opposite of the value that would otherwise be returned. e.g. myVariable = 3, buuut !(myVariable === 3). The result is false as ! performs the not operation.</li>
+              <li>Does not Equal - tests to see if two values are not equal and returns a boolean result. Opposite of strict equality. e.g. !==.</li>
+              <li>Conditional - a code structure that tests if an expression is true or truthy and executes code based on the result. See examples section.</li>
+              <li>Function - creates a re-usable function that can be used anywhere in the code. See examples section.</li>
+              <li>Event/event handler - listens for activity in the broswer and runs code in response to that activity. e.g. clicking the screen.</li>
+              <li>Dynamic typing - vairables in Javascript may be associated with any value type, or reassigned to a different value type e.g. let pineapple = 117;</li>
+              <li>Weak typing - Javascript allows for implicit type conversion when an operation involves mismatched value types rather than throwing an error. e.g. foo = 42, foo + 1, return 421 (this is the combination of the two strings).</li>
+              <li>Primitive value/immutable - primitive values are values that cannot be changed e.g. null. e.g. changing this value would break JS.</li>
+              <li>Null - expresses that a variable points to no object. See examples for intentional usage of null.</li>
+              <li>Undefined - expresses the a variable points to no value.</li>
+              <li>JavaScript Property - These associate keys with their value. Here keys define the data set and values are the variables that belong to the set. e.g. (Key) FirstName (value) Bugs</li>
+              <li>Data Property - A kind of JavaScript property that associates a certain key with a certain kind of value. e.g. value (can be any kind of value), writable (boolean as to whether the property can be assigned (=)), enumerable (boolean value that indicates whether a property can be used in a for...loop), configurable (a boolean value that indicates whether or not a value can be deleted, modified or be changed to an accessor property). </li>
+              <li>Accessor Property - a key with one of two accessor functions (get and set) to retrieve or store a value.</li>
+              <li>Get - binds an object property to a function that will be called when it is looked up. See example section.</li>
+              <li>Set - can be used to define or store a value.</li>
+              <li>Method - A Javascript method is a property containing a function definition. </li>
+              <li>Argument - Object called arguments work as a local variable available to all function except arrows. This is used to access the parameter that is passed to the function. It can only be accessed inside the function.</li>
+              <li>Truthy/Falsy - A value is considered falsy if it is 0, +-0, On, Null, Undefined, NaN, or a boolean false value. All other values including a boolean true are truthy. Conditional (If statements) trigger conditions only if the value is truthy. See examples.</li>
+              <li>For loop - Uses a predictable pattern of indicies to perform a task on all the items in the array by allowing a single code block to run over and over again. See examples section.</li>
+            </ul>
+          <h3>Built-in Functions</h3>
+            <ul>
+              <li>document.querySelector ("h1"); - selects an element from html. See example section.</li>
+              <li>ExampleVariable.textContent - sets the variables of the text content (e.g.) what is the text. See example section. </li>
+              <li>alert(); - triggers pop-up in browser. </li>
+              <li>return result; instructs the function to return the result of the variable so that it is available to use outside of the variable. </li>
+              <li>document.querySelector("html").addEventListener("click", - instructs the event listener to listen for a click anywhere on the html page. </li>
+              <li>console.log () - outputs the contents of the parentheses to the console. </li>
+              <li>math.floor() - Always rounds down and returns the largest integer less than or equal to a given number.</li>
+              <li>math.random() - returns a pseudo random number that is greater than or equal to zero and less than one.</li>
+              <li></li>
+            </ul>
+            <h3>Examples</h3>
+            <ul>
+              <li>Conditional Statement</li>
+              <li>Function</li>
+              <li>Usage of Null</li>
+              <li>Usage of Get</li>
+              <li>Usage of Set</li>
+              <li>For... Loop</li>
+              <li>Usage of querySelector</li>
+            </ul>
+   
+      </section>
+
+      <section class="card" id="misc-section">
+        <h2>Miscellaneous</h2>
+          <h3>Data Science Concepts</h3>
+            <ul>
+              <li>Separation of concerns - Making the program modular, so that each section is separate and addresses a different "concern". This makes code easier to maintain and develop further, but requires more initial coding to set up.</li>
+              <li>D.R.Y code - Don't Repeat Yourself. e.g. rather than make separate lines for header and footer in a CSS stylesheet use a comma to combine the two. e.g. use selector header, footer</li>
+              <li>Control Flow - The order in which the computer executes code e.g. in JS it is linear (top to bottom).</li>
+            </ul>
+          <h3>Resources</h3>
+            <ul>
+              <li><a href= "https://www.markdownguide.org/cheat-sheet/">Markdown Language Cheat Sheet</a></li>
+            </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>I can code!</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
